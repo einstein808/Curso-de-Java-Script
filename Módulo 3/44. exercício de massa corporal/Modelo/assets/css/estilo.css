@@ -63,7 +63,10 @@ form button:hover{
     text-align: left;
     margin-left: 200px;
 }
-.paragrafo-resultado{
+.paragrafo-resultado, .bad{
     background:rgb(44, 226, 38);
     padding: 20px;
+}
+.bad {
+    background: red;
 }
