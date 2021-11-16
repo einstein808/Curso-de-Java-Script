@@ -2,20 +2,19 @@
 const form = document.querySelector('#formulario')
 form.addEventListener('submit', function(event){
     event.preventDefault();
-    console.log('evento previnido');
-    setResultado('olamundo')
+    const inputPeso = event.target.querySelector('#peso');
+    const inputAltura = event.target.querySelector('#altura');
+    const peso = Number(inputPeso.value);
+    const altura = Number(inputAltura.value);
+    console.log (peso, altura)
 
 });
-function criaP ()
-{ 
-    
+function criaP (className)
+{ const p = document.createElement('p');
+return p;
 }
 function setResultado (msg){
     const resultado = document.querySelector('#resultado');
     resultado.innerHTML = '';
-
-    const p = document.createElement('p');
-    p.classList.add('paragrafo-resultado');
-    p.innerHTML= 'qualquer coisa';
-    resultado.appendChild(p);
+    const p = criaP();
 }
