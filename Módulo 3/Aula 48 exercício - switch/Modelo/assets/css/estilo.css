@@ -1,0 +1,55 @@
+:root {
+    --background-marrom:  rgb(210, 180, 140);
+    --background-marrom-darker: rgb(32, 28, 22);
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--background-marrom)
+   
+}
+.container {
+    max-width: 640px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    font-family:'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+form input{
+    font-size: 24px;
+    height: px;
+    padding: 0 20px;
+}
+form input:focus {
+    outline: 1px solid var(--background-marrom);
+}
+form button{
+    border:  none;
+    background: var(--background-marrom);
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+form button:hover{
+    background: var(--background-marrom-darker);
+}
+
